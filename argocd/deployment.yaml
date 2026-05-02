@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: final-nodejs-app
+  namespace: final-space
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: final-nodejs-app
+  template:
+    metadata:
+      labels:
+        app: final-nodejs-app
+    spec:
+      containers:
+      - name: nodejs-container
+        image: jeongau/final-nodejs-app:latest # 핵심!
+        ports:
+        - containerPort: 3000
