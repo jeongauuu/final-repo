@@ -9,4 +9,4 @@ resources:
 images:
 - name: jeongau/final-nodejs-app
   newName: jeongau/final-nodejs-app
-  newTag: e00329c
+  newTag: 6b53f39
